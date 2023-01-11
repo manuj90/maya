@@ -1,6 +1,5 @@
 import React from "react";
-import Button from "../../components/button/Button";
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/hero/Hero";
 import Sections from "../../components/sections/Sections";
 import Services from "../../components/services/Services";
 import Solutions from "../../components/solutions/Solutions";

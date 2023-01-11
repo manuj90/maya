@@ -2,19 +2,20 @@ import React from "react";
 import tools from "../../assets/services/tools.webp";
 import worker from "../../assets/services/worker.webp";
 import warehouse from "../../assets/services/warehouse.webp";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <div className="md:container m-auto space-y-16 w-5/12">
-      <ul className="flex flex-col md:flex-row gap-2 items-center justify-center uppercase text-center text-white font-bold ">
-        <li className="w-64 md:w-72 h-28 flex items-center justify-center font-bold text-lg bg-[url('https://images.pexels.com/photos/1381938/pexels-photo-1381938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-right-bottom grayscale">
-          presupuesto
+      <ul className="flex flex-col md:flex-row gap-2 items-center justify-center uppercase text-center text-black font-bold ">
+        <li className="w-64 md:w-72 h-28 flex items-center justify-center font-bold text-3xl bg-frame1 bg-cover hover:scale-105 transition-all ease-in-out duration-200">
+          <Link to="/products">presupuesto</Link>
         </li>
-        <li className=" w-64 md:w-72 h-28 flex items-center justify-center font-bold text-lg bg-[url('https://images.pexels.com/photos/5294/pattern-abstract-honeycomb-metal.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-right-bottom grayscale">
-          servicios
+        <li className=" w-64 md:w-72 h-28 flex items-center justify-center font-bold text-3xl bg-frame2 bg-cover hover:scale-105 transition-all ease-in-out duration-200">
+          <Link to="/services">Servicios</Link>
         </li>
-        <li className=" w-64 md:w-72 h-28 flex items-center justify-center font-bold text-lg bg-[url('https://images.pexels.com/photos/10420338/pexels-photo-10420338.jpeg')] bg-right-bottom grayscale">
-          encontranos
+        <li className=" w-64 md:w-72 h-28 flex items-center justify-center font-bold text-3xl bg-frame3 bg-cover hover:scale-105 transition-all ease-in-out duration-200">
+          <Link to="contact">Encontranos</Link>
         </li>
       </ul>
 

@@ -20,9 +20,11 @@ const Navbar = () => {
   const isMobile = width <= 719;
 
   const handleMenu = () => {
-    isMobile ? setShow(!show) : null;
-    setShow(!show);
+    isMobile ? setShow((show) => !show) : null;
+    window.scrollTo(0, 0);
   };
+
+  let url = window.location.pathname;
 
   const links = [
     { name: "inicio", link: "/" },
@@ -46,7 +48,9 @@ const Navbar = () => {
                   className={`hover:text-slate-700 transition duration-400 ease-in-out ${
                     isMobile && show ? "visible" : isMobile ? "hidden" : "block"
                   }`}>
-                  <Link to={link.link}> {link.name} </Link>
+                  <Link to={link.link} onClick={handleMenu}>
+                    {link.name}
+                  </Link>
                 </li>
               );
             } else {
@@ -55,17 +59,19 @@ const Navbar = () => {
                   <div
                     className=" bg-white rounded-lg px-1 pb-1 cursor-default transition duration-200 ease-in-out flex flex-col items-center"
                     onClick={handleMenu}>
-                    <picture>
-                      <source srcSet={link.name} type="image/webp" />
-                      <img
-                        src={link.name}
-                        alt="Maya Logo"
-                        className="h-10 w-10 md:h-14 md:w-14"
-                      />
-                    </picture>
-                    {isMobile ? (
-                      <p className="text-xs text-slate-500">Menu</p>
-                    ) : null}
+                    <Link to={isMobile ? null : link.link}>
+                      <picture>
+                        <source srcSet={link.name} type="image/webp" />
+                        <img
+                          src={link.name}
+                          alt="Maya Logo"
+                          className="h-10 w-10 md:h-14 md:w-14"
+                        />
+                      </picture>
+                      {isMobile ? (
+                        <p className="text-xs text-slate-500">Menu</p>
+                      ) : null}
+                    </Link>
                   </div>
                 </li>
               );
