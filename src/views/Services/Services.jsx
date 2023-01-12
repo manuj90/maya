@@ -2,12 +2,13 @@ import React from "react";
 import Header from "../../components/header/Header";
 import VideoPlay from "../../components/videoPlay/VideoPlay";
 import institutional from "../../assets/video/institutionalVideo.mp4";
+import ServicesGrid from "../../components/servicesGrid/ServicesGrid";
 
 function Services() {
   return (
     <div>
       <Header>Servicios</Header>
-      <h1>Aca hay un grid</h1>
+      <ServicesGrid />
       <VideoPlay video={institutional} />
     </div>
   );

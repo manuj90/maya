@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed top-0 left-0 uppercase font-semibold text-slate-500 cursor-pointer z-50">
       <div className="flex py-1 md:py-4 bg-white md:justify-center md:h-12 ">
-        <ul className="flex flex-col md:flex-row gap-4 lg:gap-10 px-10 items-center w-full md:items-start md:justify-center">
+        <ul className="flex flex-col md:flex-row gap-4 lg:gap-10 px-10 justify-center items-center w-full md:items-start md:justify-center">
           {links.map((link, index) => {
             if (link.name !== logo) {
               return (

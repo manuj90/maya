@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mayalogo from "../../assets/footer.webp";
 
 const Footer = () => {
@@ -6,10 +7,12 @@ const Footer = () => {
     <footer className="bg-red-maya text-white py-10 w-full">
       <div className="flex flex-col gap-8 items-center md:flex-row md:justify-between md:container m-auto md:w-10/12">
         <div>
-          <picture>
-            <source srcSet={mayalogo} type="image/webp" />
-            <img src={mayalogo} alt="Maya Logo" className="max-h-44" />
-          </picture>
+          <Link to="/">
+            <picture>
+              <source srcSet={mayalogo} type="image/webp" />
+              <img src={mayalogo} alt="Maya Logo" className="max-h-44" />
+            </picture>
+          </Link>
         </div>
 
         <div className="hover:underline hover:underline-offset-4">
