@@ -38,6 +38,8 @@ module.exports = {
         bg2: "url('assets/bgElements/bg2.png')",
         bg3: "url('assets/bgElements/bg3.png')",
 
+        contact: "url('assets/bgElements/contact.png')",
+
         about: "url('assets/sections/about.webp')",
         separator: "url('assets/separator/separator.png')",
         frame1: "url('assets/services/Frame-1.webp')",

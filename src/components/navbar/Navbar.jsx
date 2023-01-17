@@ -54,9 +54,7 @@ const Navbar = () => {
                   className={`hover:text-slate-700 transition duration-400 ease-in-out ${
                     isMobile && show ? "visible" : isMobile ? "hidden" : "block"
                   } ${
-                    activeLink === link.link
-                      ? "underline decoration-red-maya decoration-4 underline-offset-2"
-                      : null
+                    activeLink === link.link ? "text-red-maya underline underline-offset-4 decoration-2" : null
                   }`}>
                   <Link to={link.link} onClick={handleMenu}>
                     {link.name}
