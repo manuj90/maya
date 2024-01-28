@@ -14,7 +14,7 @@ const Header = ({ section, children }) => {
     <div
       className={`${section} bg-cover bg-center h-[35rem] text-white font-libre`}>
       <div className="uppercase flex flex-col justify-end items-end h-full mx-2 md:container md:m-auto">
-        <h1 className="text-4xl md:text-8xl font-bold tracking-wide text-left">
+        <h1 className="text-4xl sm:mr-2 md:text-8xl font-bold tracking-wide text-left">
           {children}
         </h1>
       </div>
